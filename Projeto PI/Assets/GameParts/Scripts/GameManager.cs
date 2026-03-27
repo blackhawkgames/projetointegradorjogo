@@ -4,24 +4,45 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public static GameManager Instance;
+
+    [Header("Informações Básicas")]
+    public bool HasSave = false;
+
+    [Header("Infos Player")]
     public int estado_mental = 0;
-    
-    public float dinheiro = 0;
+    public float dinheiro = 0f;
+    public float risco = 0f;
+    public float exposicao = 0f;
 
-    public int risco = 0;
-
-    public int exposicao = 0;
-
-
-    void Start()
+    private void Awake()
     {
-        
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+
+            // Aqui só verifica se existe save
+            HasSave = SaveSystem.SaveExists();
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    // Aplicar dados carregados
+    public void ApplySaveData(SaveData data)
     {
-        
+        estado_mental = data.estado_mental;
+        dinheiro = data.dinheiro;
+        risco = data.risco;
+        exposicao = data.exposicao;
+    }
+
+    // Salvar
+    public void SaveGame()
+    {
+        SaveSystem.SaveGame(this);
     }
 }

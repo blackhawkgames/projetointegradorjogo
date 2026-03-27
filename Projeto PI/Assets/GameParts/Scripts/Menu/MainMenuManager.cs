@@ -10,22 +10,29 @@ public class MainMenuManager : MonoBehaviour
     [Header("Configurações Adicionais")]
     public bool NewGameDeleteSaves = false;
 
-
-
-    
-
-
     private void Start()
     {
-        
+        ContinueButton.SetActive(GameManager.Instance.HasSave);
     }
+
     public void ContinueGame()
     {
+        SaveData data = SaveSystem.LoadGame();
 
+        if (data != null)
+        {
+            GameManager.Instance.ApplySaveData(data);
+            SceneManager.LoadScene(NewGameScene);
+        }
     }
 
     public void NewGame()
     {
+        if (NewGameDeleteSaves)
+        {
+            SaveSystem.DeleteSave();
+        }
+
         SceneManager.LoadScene(NewGameScene);
     }
 
