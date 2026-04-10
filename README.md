@@ -1,4 +1,4 @@
-# PROJETO "?" - PROJETO INTEGRADOR 2026.1
+# Anderson: Segurança em Risco - PROJETO INTEGRADOR 2026.1
 
 Desenvolvimeto de um jogo educativo com intuito de concientizar pessoas a respeito de decisões no mundo cibernetico de forma lúdica e interativa.
 
