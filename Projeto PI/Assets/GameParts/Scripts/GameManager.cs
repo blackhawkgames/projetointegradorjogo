@@ -22,7 +22,6 @@ public class GameManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
 
-            // Aqui só verifica se existe save
             HasSave = SaveSystem.SaveExists();
         }
         else
@@ -31,7 +30,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Aplicar dados carregados
     public void ApplySaveData(SaveData data)
     {
         estado_mental = data.estado_mental;
@@ -40,7 +38,6 @@ public class GameManager : MonoBehaviour
         exposicao = data.exposicao;
     }
 
-    // Salvar
     public void SaveGame()
     {
         SaveSystem.SaveGame(this);

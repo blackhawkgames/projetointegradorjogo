@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e08c8e11cd336943888b5147ebfcc8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NewGameScene: Chapter01
+  NewGameScene: Tester
   ContinueButton: {fileID: 1956067701}
   NewGameDeleteSaves: 0
 --- !u!1 &63142941

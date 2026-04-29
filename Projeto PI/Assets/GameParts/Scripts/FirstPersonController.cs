@@ -128,6 +128,14 @@ public class FirstPersonController : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
     }
 
+    public interface IInteractable
+    {
+        string GetInteractionText();
+        void Interact();
+    }
+
+
+
     void HandleHeadbob()
     {
         float moveAmount = moveInput.magnitude;
