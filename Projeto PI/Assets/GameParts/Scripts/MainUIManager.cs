@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class MainUIManager : MonoBehaviour
 {
@@ -18,6 +19,10 @@ public class MainUIManager : MonoBehaviour
     public CanvasGroup HintTextCanvasGroup;
     public string DefaultHintText;
     public float HintFadeDuration = 4f;
+
+    [Header("Referencias para Pause")]
+    public GameObject PauseTAB;
+    public InputActionReference pauseAction;
 
 
     [Header("Referências para Inventário")]
@@ -38,11 +43,13 @@ public class MainUIManager : MonoBehaviour
     private void OnEnable()
     {
         inventoryAction.action.Enable();
+        pauseAction.action.Enable();
     }
 
     private void OnDisable()
     {
         inventoryAction.action.Disable();
+        pauseAction.action.Disable();
     }
 
     private void Start()
@@ -73,7 +80,38 @@ public class MainUIManager : MonoBehaviour
             if(!isInventory) OpenInventory();
             else CloseInventory();
         }
+
+        if(pauseAction.action.WasPressedThisFrame())
+        {
+            if (!isPaused)
+            {
+                OpenPause();
+            }
+            else ClosePause();
+        }
     }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void OpenPause()
+    {
+        gameTools.DisableMovement();
+        gameTools.PauseGame();
+        isPaused = true;
+        PauseTAB.SetActive(true);
+    }
+
+    public void ClosePause()
+    {
+        gameTools.EnableMovement();
+        gameTools.ResumeGame();
+        isPaused = false;
+        PauseTAB.SetActive(false);
+    }
+
 
     public void ShowCustomHint(string hintText)
     {
