@@ -25,6 +25,7 @@ public class GameTools : MonoBehaviour
     {
         ppm.SetPause(true);
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     public void ResumeGame()

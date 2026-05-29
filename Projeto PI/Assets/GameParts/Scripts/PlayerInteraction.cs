@@ -11,8 +11,7 @@ public class PlayerInteraction : MonoBehaviour
     public InputActionReference interactAction;
 
     private IInteractable currentInteractable;
-
-    private InteractableObject lastInteractable;
+    private IInteractable lastInteractable;
 
     void CheckInteraction()
     {
@@ -21,16 +20,22 @@ public class PlayerInteraction : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, interactDistance, interactLayer))
         {
-            var interactable = hit.collider.GetComponent<InteractableObject>();
+            var interactable = hit.collider.GetComponent<IInteractable>();
 
             if (interactable != null)
             {
                 if (lastInteractable != interactable)
                 {
                     if (lastInteractable != null)
-                        lastInteractable.HideUI();
+                    {
+                        MonoBehaviour mb = lastInteractable as MonoBehaviour;
+
+                        if (mb != null)
+                            lastInteractable.HideUI();
+                    }
 
                     interactable.ShowUI(interactable.GetInteractionText());
+
                     lastInteractable = interactable;
                 }
 
@@ -41,7 +46,13 @@ public class PlayerInteraction : MonoBehaviour
 
         if (lastInteractable != null)
         {
-            lastInteractable.HideUI();
+            MonoBehaviour mb = lastInteractable as MonoBehaviour;
+
+            if (mb != null)
+            {
+                lastInteractable.HideUI();
+            }
+
             lastInteractable = null;
         }
 
@@ -53,11 +64,18 @@ public class PlayerInteraction : MonoBehaviour
         interactAction.action.Enable();
     }
 
+    public void ClearInteraction()
+    {
+        currentInteractable = null;
+        lastInteractable = null;
+    }
+
     void Update()
     {
         CheckInteraction();
 
-        if (currentInteractable != null && interactAction.action.WasPressedThisFrame())
+        if (currentInteractable != null &&
+            interactAction.action.WasPressedThisFrame())
         {
             currentInteractable.Interact();
         }

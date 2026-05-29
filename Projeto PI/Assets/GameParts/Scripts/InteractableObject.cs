@@ -28,15 +28,21 @@ public class InteractableObject : MonoBehaviour, IInteractable
 
     public void ShowUI(string text)
     {
+        if (interactCanvas == null)
+            return;
+
         interactCanvas.SetActive(true);
 
         var tmp = interactCanvas.GetComponentInChildren<TMPro.TextMeshProUGUI>();
-        tmp.text = text;
+
+        if (tmp != null)
+            tmp.text = text;
     }
 
     public void HideUI()
     {
-        interactCanvas.SetActive(false);
+        if (interactCanvas != null)
+            interactCanvas.SetActive(false);
     }
 
     public string GetInteractionText()
@@ -76,12 +82,31 @@ public class InteractableObject : MonoBehaviour, IInteractable
 
     void Collect()
     {
+        HideUI();
+
+        PlayerInteraction interaction =
+            FindFirstObjectByType<PlayerInteraction>();
+
+        if (interaction != null)
+            interaction.ClearInteraction();
+
         Debug.Log("Item coletado");
+
         Destroy(gameObject);
     }
+
 
     void Use()
     {
         Debug.Log("Objeto usado");
+    }
+
+    private void OnDestroy()
+    {
+        PlayerInteraction interaction =
+            FindFirstObjectByType<PlayerInteraction>();
+
+        if (interaction != null)
+            interaction.ClearInteraction();
     }
 }

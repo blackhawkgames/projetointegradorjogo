@@ -1,58 +1,105 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class TriggerEnterEvents : MonoBehaviour
 {
-    [Header("Configurações Básicas")]
+    public enum TriggerType
+    {
+        Enter,
+        Exit,
+        Stay
+    }
+
+    [Header("Config")]
+    public TriggerType[] triggerTypes;
+
     public bool oneTimeOnly = false;
-    public float StayTime = 1f;
 
-    [Header("Eventos")]
-    public UnityEvent TriggerEnter;
-    public UnityEvent TriggerExit;
-    public UnityEvent TriggerStay;
+    public float stayDelay = 1f;
 
-    private bool CanInteract = true;
+    [Header("Events")]
+    public UnityEvent OnEnter;
+
+    public UnityEvent OnExit;
+
+    public UnityEvent OnStay;
+
+    private bool canInteract = true;
+
+    private bool isCounting;
+
+    bool HasTriggerType(TriggerType type)
+    {
+        foreach (var trigger in triggerTypes)
+        {
+            if (trigger == type)
+                return true;
+        }
+
+        return false;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player") && CanInteract)
-        {
-            TriggerEnter?.Invoke();
-            if(oneTimeOnly) CanInteract = false;
-         }
+        if (!other.CompareTag("Player"))
+            return;
+
+        if (!canInteract)
+            return;
+
+        if (!HasTriggerType(TriggerType.Enter))
+            return;
+
+        OnEnter?.Invoke();
+
+        if (oneTimeOnly)
+            canInteract = false;
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player") && CanInteract)
-        {
-            TriggerExit?.Invoke();
-            if (oneTimeOnly) CanInteract = false;
-        }
+        if (!other.CompareTag("Player"))
+            return;
+
+        if (!HasTriggerType(TriggerType.Exit))
+            return;
+
+        OnExit?.Invoke();
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Player") && CanInteract)
+        if (!other.CompareTag("Player"))
+            return;
+
+        if (!canInteract)
+            return;
+
+        if (!HasTriggerType(TriggerType.Stay))
+            return;
+
+        if (stayDelay <= 0f)
         {
-            if (StayTime < 0f)
-            {
-                TriggerStay?.Invoke();
-            }
-            else
-            {
-                StartCoroutine(CountdownTime());
-            }
+            OnStay?.Invoke();
+        }
+        else if (!isCounting)
+        {
+            StartCoroutine(StayCoroutine());
         }
     }
 
-    IEnumerator CountdownTime()
+    IEnumerator StayCoroutine()
     {
-        TriggerStay?.Invoke();
-        yield return new WaitForSeconds(StayTime);
-        CanInteract = false;
+        isCounting = true;
+
+        yield return new WaitForSeconds(stayDelay);
+
+        OnStay?.Invoke();
+
+        if (oneTimeOnly)
+            canInteract = false;
+
+        isCounting = false;
     }
 }
