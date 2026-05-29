@@ -13,6 +13,7 @@ public class MainUIManager : MonoBehaviour
     public GameTools gameTools;
     public float fadeDuration = 0.3f;
     public CanvasGroup BackgroundCanvas;
+    public ComputerUIManager computerCanvas;
 
     [Header("Referências para HUD")]
     public TextMeshProUGUI CustomHintText;
@@ -61,6 +62,7 @@ public class MainUIManager : MonoBehaviour
     {
         gameTools.DisableMovement();
         gameTools.PauseGame();
+        
         InventoryTab.SetActive(true);
         isInventory = true;
     }
@@ -77,7 +79,7 @@ public class MainUIManager : MonoBehaviour
     {
         if (inventoryAction.action.WasPressedThisFrame() && !isPaused)
         {
-            if(!isInventory) OpenInventory();
+            if(!isInventory && !computerCanvas.isOpen) OpenInventory();
             else CloseInventory();
         }
 
@@ -98,6 +100,7 @@ public class MainUIManager : MonoBehaviour
 
     public void OpenPause()
     {
+        if(isInventory) CloseInventory();
         gameTools.DisableMovement();
         gameTools.PauseGame();
         isPaused = true;

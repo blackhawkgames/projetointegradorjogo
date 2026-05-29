@@ -131,7 +131,12 @@ public class FirstPersonController : MonoBehaviour
     public interface IInteractable
     {
         string GetInteractionText();
+
         void Interact();
+
+        void ShowUI(string text);
+
+        void HideUI();
     }
 
 
