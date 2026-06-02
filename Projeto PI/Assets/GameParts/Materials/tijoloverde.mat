@@ -29,7 +29,7 @@ Material:
   - _FILTERMODE_POINT
   - _LIGHTMODE_TEXELLIT
   - _RECEIVESHADOWSMODE_ON
-  - _SNAPMODE_VIEW
+  - _SNAPMODE_OFF
   - _WRAPMODE_REPEAT
   m_InvalidKeywords:
   - _USE_VERTEX_COLORS_OFF
@@ -45,7 +45,7 @@ Material:
     m_TexEnvs:
     - _BaseMap:
         m_Texture: {fileID: 2800000, guid: f447d0f82bc7ba943baa8511f0c04635, type: 3}
-        m_Scale: {x: 1, y: 4.27}
+        m_Scale: {x: 0.1, y: 0.1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
@@ -114,7 +114,7 @@ Material:
     - _LightMode: 1
     - _ReceiveShadowsMode: 0
     - _ResolutionLimit: 64
-    - _SnapMode: 2
+    - _SnapMode: 3
     - _SnapsPerUnit: 64
     - _WrapMode: 1
     m_Floats:
