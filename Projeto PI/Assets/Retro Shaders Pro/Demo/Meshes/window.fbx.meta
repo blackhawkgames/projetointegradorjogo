@@ -107,3 +107,10 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 287937
+  packageName: Retro Shaders Pro for URP
+  packageVersion: 1.5.5
+  assetPath: Assets/Retro Shaders Pro/Demo/Meshes/window.fbx
+  uploadId: 912940
