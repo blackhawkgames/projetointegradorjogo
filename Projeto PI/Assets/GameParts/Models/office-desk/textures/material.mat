@@ -29,7 +29,7 @@ Material:
   - _FILTERMODE_POINT
   - _LIGHTMODE_TEXELLIT
   - _RECEIVESHADOWSMODE_ON
-  - _SNAPMODE_VIEW
+  - _SNAPMODE_OFF
   - _WRAPMODE_REPEAT
   m_InvalidKeywords:
   - _USE_VERTEX_COLORS_OFF
@@ -114,7 +114,7 @@ Material:
     - _LightMode: 1
     - _ReceiveShadowsMode: 0
     - _ResolutionLimit: 64
-    - _SnapMode: 2
+    - _SnapMode: 3
     - _SnapsPerUnit: 64
     - _WrapMode: 1
     m_Floats:
@@ -165,3 +165,4 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1
