@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ComputerUIManager : MonoBehaviour
 {
@@ -6,7 +7,19 @@ public class ComputerUIManager : MonoBehaviour
     [SerializeField] private GameObject computerCanvas;
     [SerializeField] private GameTools gameTools;
 
+    public InputActionReference closeAction;
+
     public bool isOpen;
+
+    private void OnEnable()
+    {
+        closeAction.action.Enable();
+    }
+
+    private void OnDisable()
+    {
+        closeAction.action.Disable();
+    }
 
     private void Start()
     {
@@ -15,7 +28,7 @@ public class ComputerUIManager : MonoBehaviour
 
     private void Update()
     {
-        if (isOpen && Input.GetKeyDown(KeyCode.Escape))
+        if (isOpen && closeAction.action.WasPressedThisFrame())
         {
             CloseComputer();
         }

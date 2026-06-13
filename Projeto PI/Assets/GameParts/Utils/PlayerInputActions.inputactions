@@ -1,4 +1,5 @@
 {
+    "version": 1,
     "name": "PlayerInputActions",
     "maps": [
         {
@@ -159,7 +160,7 @@
                     "name": "Pause",
                     "type": "Button",
                     "id": "bf4ea281-bf91-4375-a605-a8e2492c3343",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
