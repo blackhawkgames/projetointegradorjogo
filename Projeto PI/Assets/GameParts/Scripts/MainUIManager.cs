@@ -85,7 +85,7 @@ public class MainUIManager : MonoBehaviour
 
         if(pauseAction.action.WasPressedThisFrame())
         {
-            if (!isPaused)
+            if (!isPaused && !computerCanvas.isOpen)
             {
                 OpenPause();
             }

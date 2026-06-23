@@ -139,7 +139,7 @@ MonoBehaviour:
     m_Value: {r: 1, g: 1, b: 1, a: 0.29803923}
   brightness:
     m_OverrideState: 1
-    m_Value: 2.3
+    m_Value: 2.81
   contrast:
     m_OverrideState: 1
     m_Value: 1

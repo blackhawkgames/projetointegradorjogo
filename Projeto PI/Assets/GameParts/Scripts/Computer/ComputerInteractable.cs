@@ -14,6 +14,16 @@ public class ComputerInteractable : MonoBehaviour, IInteractable
     [Header("Events")]
     public UnityEvent OnInteract;
 
+    public FloatingIconType GetIconType()
+    {
+        return FloatingIconType.Computer;
+    }
+
+    public Transform GetTransform()
+    {
+        return transform;
+    }
+
     private void Start()
     {
         if (interactCanvas != null)

@@ -20,6 +20,21 @@ public class InteractableObject : MonoBehaviour, IInteractable
 
     public UnityEvent OnInteract;
 
+    public FloatingIconType iconType;
+
+    public FloatingIconType GetIconType()
+    {
+        return iconType;
+    }
+
+    public Transform GetTransform()
+    {
+        return transform;
+    }
+
+    [Header("Floating Icon")]
+    public Vector3 iconOffset = new Vector3(0f, 1.5f, 0f);
+
     private void Start()
     {
         if (interactCanvas != null)
@@ -89,6 +104,8 @@ public class InteractableObject : MonoBehaviour, IInteractable
 
         if (interaction != null)
             interaction.ClearInteraction();
+
+        FloatingIconManager.Instance.RemoveTarget(transform);
 
         Debug.Log("Item coletado");
 

@@ -7,11 +7,12 @@ public class PlayerInteraction : MonoBehaviour
     public float interactDistance = 2.5f;
     public LayerMask interactLayer;
     public Transform cameraTransform;
-
+    public float iconDistance = 3f;
     public InputActionReference interactAction;
 
     private IInteractable currentInteractable;
     private IInteractable lastInteractable;
+    private IInteractable currentIconInteractable;
 
     void CheckInteraction()
     {
@@ -35,7 +36,6 @@ public class PlayerInteraction : MonoBehaviour
                     }
 
                     interactable.ShowUI(interactable.GetInteractionText());
-
                     lastInteractable = interactable;
                 }
 
@@ -52,7 +52,6 @@ public class PlayerInteraction : MonoBehaviour
             {
                 lastInteractable.HideUI();
             }
-
             lastInteractable = null;
         }
 
@@ -64,6 +63,63 @@ public class PlayerInteraction : MonoBehaviour
         interactAction.action.Enable();
     }
 
+    void CheckFloatingIcons()
+    {
+        Collider[] nearbyObjects =
+            Physics.OverlapSphere(
+                transform.position,
+                iconDistance,
+                interactLayer);
+
+        IInteractable closest = null;
+
+        float closestDistance = Mathf.Infinity;
+
+        foreach (Collider col in nearbyObjects)
+        {
+            IInteractable interactable = col.GetComponent<IInteractable>();
+
+            if (interactable == null)
+                continue;
+
+            float distance =
+                Vector3.Distance(transform.position, interactable.GetTransform().position);
+
+            if (distance < closestDistance)
+            {
+                closestDistance = distance;
+                closest = interactable;
+            }
+        }
+
+        if (closest == null)
+        {
+            if (currentIconInteractable != null)
+            {
+                FloatingIconManager.Instance.HideIcon();
+                currentIconInteractable = null;
+            }
+
+            return;
+        }
+
+        if (closest != currentIconInteractable)
+        {
+            currentIconInteractable = closest;
+
+            InteractableObject interactObj =
+                closest.GetTransform().GetComponent<InteractableObject>();
+
+            if (interactObj != null)
+            {
+                FloatingIconManager.Instance.ShowIcon(
+                    interactObj.transform,
+                    interactObj.iconType,
+                    interactObj.iconOffset);
+            }
+        }
+    }
+
     public void ClearInteraction()
     {
         currentInteractable = null;
@@ -73,6 +129,8 @@ public class PlayerInteraction : MonoBehaviour
     void Update()
     {
         CheckInteraction();
+
+        CheckFloatingIcons();
 
         if (currentInteractable != null &&
             interactAction.action.WasPressedThisFrame())

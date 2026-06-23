@@ -137,6 +137,9 @@ public class FirstPersonController : MonoBehaviour
         void ShowUI(string text);
 
         void HideUI();
+        FloatingIconType GetIconType();
+
+        Transform GetTransform();
     }
 
 
