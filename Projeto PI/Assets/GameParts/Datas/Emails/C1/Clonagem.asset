@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c0d0f481a8b8f24496a7af043fc379d, type: 3}
+  m_Name: Clonagem
+  m_EditorClassIdentifier: Assembly-CSharp::EmailData
+  emailID: betano
+  sender: Enzo da Bet9872
+  subject: Coqueiros X Varmengo
+  body: "Voc\xEA ganhou a aposta da partida Coqueiros X Varmengo!\n\nVarmengo venceu
+    o coqueiros por 7X1 e com isso, voc\xEA recebeu o dobro da aposta!"
+  date: 27/04/2026
+  startsUnlocked: 1
+  important: 1
+  canReply: 1
+  replyButtonText: RECEBER
+  replyEventID: receberaposta
+  isPhishing: 1
+  educationalMessage: "Preste muita atencao t\xE1?"

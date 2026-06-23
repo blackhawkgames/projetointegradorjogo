@@ -27,4 +27,9 @@ public class EmailData : ScriptableObject
     public string replyButtonText;
 
     public string replyEventID;
+
+    [Header("Phishing Settings")]
+    public bool isPhishing;
+    [TextArea(3, 10)]
+    public string educationalMessage;
 }
