@@ -22,7 +22,7 @@ public class MainMenuManager : MonoBehaviour
         if (data != null)
         {
             GameManager.Instance.ApplySaveData(data);
-            SceneManager.LoadScene(NewGameScene);
+            LoadingManager.Instance.LoadScene(NewGameScene);
         }
     }
 
@@ -33,7 +33,7 @@ public class MainMenuManager : MonoBehaviour
             SaveSystem.DeleteSave();
         }
 
-        SceneManager.LoadScene(NewGameScene);
+        LoadingManager.Instance.LoadScene(NewGameScene);
     }
 
     public void ExitGame()
