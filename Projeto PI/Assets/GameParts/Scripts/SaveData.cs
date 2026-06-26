@@ -7,4 +7,8 @@ public class SaveData
     public float dinheiro;
     public float risco;
     public float exposicao;
+    public bool CompletouJogo;
+    public int qualidadeGrafica;
+    public float volumeMaster;
+    public float sensibilidadeMouse;
 }

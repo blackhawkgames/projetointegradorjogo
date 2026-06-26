@@ -24,6 +24,7 @@ public class MainUIManager : MonoBehaviour
     [Header("Referencias para Pause")]
     public GameObject PauseTAB;
     public InputActionReference pauseAction;
+    public GameObject OptionsTAB;
 
 
     [Header("Referências para Inventário")]
@@ -95,7 +96,28 @@ public class MainUIManager : MonoBehaviour
 
     public void MainMenu()
     {
-        SceneManager.LoadScene(0);
+        LoadingManager.Instance.LoadScene("MainMenu");
+    }
+
+    public void LoadScene(string name)
+    {
+        LoadingManager.Instance.LoadScene(name);
+    }
+
+    public void SaveGame()
+    {
+        if(GameManager.Instance != null)
+        {
+            GameManager.Instance.SaveGame();
+        }
+    }
+
+    public void CheckCompletionist()
+    {
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.CompletouJogo = true;
+        }
     }
 
     public void OpenPause()
@@ -113,6 +135,7 @@ public class MainUIManager : MonoBehaviour
         gameTools.ResumeGame();
         isPaused = false;
         PauseTAB.SetActive(false);
+        OptionsTAB.SetActive(false);
     }
 
 

@@ -10,6 +10,7 @@ public class BrowserNewsOpenHandler : MonoBehaviour
     public string Content;
     public Sprite newImage;
 
+
     public void OpenWebsite()
     {
         App.newsImage.sprite = newImage;

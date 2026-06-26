@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c0d0f481a8b8f24496a7af043fc379d, type: 3}
+  m_Name: 1 9
+  m_EditorClassIdentifier: Assembly-CSharp::EmailData
+  emailID: pelado1
+  sender: PeladoBank
+  subject: O PeladoBank nunca pede sua senha
+  body: "Lembrete: o PeladoBank jamais solicita senha, c\xF3digo ou Pix por e-mail
+    ou mensagem. Na\r\nd\xFAvida, use somente o app oficial."
+  date: 
+  startsUnlocked: 1
+  important: 0
+  canReply: 0
+  replyButtonText: 
+  replyEventID: 
+  isPhishing: 0
+  educationalMessage: 

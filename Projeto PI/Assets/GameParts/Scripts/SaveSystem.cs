@@ -18,6 +18,10 @@ public static class SaveSystem
         data.dinheiro = gm.dinheiro;
         data.risco = gm.risco;
         data.exposicao = gm.exposicao;
+        data.CompletouJogo = gm.CompletouJogo;
+        data.qualidadeGrafica = gm.qualidadeGrafica;
+        data.volumeMaster = gm.volumeMaster;
+        data.sensibilidadeMouse = gm.sensibilidadeMouse;
 
         string json = JsonUtility.ToJson(data, true);
         File.WriteAllText(path, json);

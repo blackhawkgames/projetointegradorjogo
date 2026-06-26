@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c0d0f481a8b8f24496a7af043fc379d, type: 3}
+  m_Name: 1 14
+  m_EditorClassIdentifier: Assembly-CSharp::EmailData
+  emailID: credit
+  sender: "Cr\xE9dito F\xE1cil"
+  subject: "Empr\xE9stimo de R$ 5.000 PR\xC9-APROVADO no seu nome!"
+  body: "Seu cr\xE9dito j\xE1 est\xE1 liberado! Pra cair na conta hoje, pague s\xF3
+    a taxa de libera\xE7\xE3o de R$\r\n89,90 via Pix:\n\n\nLiberar meu dinheiro"
+  date: 
+  startsUnlocked: 1
+  important: 0
+  canReply: 0
+  replyButtonText: 
+  replyEventID: 
+  isPhishing: 1
+  educationalMessage: "Nenhuma institui\xE7\xE3o s\xE9ria cobra \"taxa de libera\xE7\xE3o\"
+    adiantada. Promessa de dinheiro f\xE1cil somada a\r\npagamento antecipado \xE9
+    a f\xF3rmula cl\xE1ssica do golpe do falso empr\xE9stimo."

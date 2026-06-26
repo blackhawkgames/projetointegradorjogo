@@ -6,6 +6,7 @@ public class MainMenuManager : MonoBehaviour
     [Header("Configuração Base")]
     public string NewGameScene;
     public GameObject ContinueButton;
+    public GameObject CompletionistButton;
 
     [Header("Configurações Adicionais")]
     public bool NewGameDeleteSaves = false;
@@ -13,6 +14,7 @@ public class MainMenuManager : MonoBehaviour
     private void Start()
     {
         ContinueButton.SetActive(GameManager.Instance.HasSave);
+        CompletionistButton.SetActive(GameManager.Instance.CompletouJogo);
     }
 
     public void ContinueGame()
@@ -34,6 +36,11 @@ public class MainMenuManager : MonoBehaviour
         }
 
         LoadingManager.Instance.LoadScene(NewGameScene);
+    }
+
+    public void CompletionistScene()
+    {
+        LoadingManager.Instance.LoadScene("Tester");
     }
 
     public void ExitGame()

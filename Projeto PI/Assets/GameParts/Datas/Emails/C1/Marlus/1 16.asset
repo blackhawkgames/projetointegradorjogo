@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c0d0f481a8b8f24496a7af043fc379d, type: 3}
+  m_Name: 1 16
+  m_EditorClassIdentifier: Assembly-CSharp::EmailData
+  emailID: atacadin
+  sender: "Atacadinho Promo\xE7\xF5es "
+  subject: "Voc\xEA ganhou um vale-compras de R$ 500! "
+  body: "Parab\xE9ns! Seu CPF foi sorteado. Pra resgatar, confirme seus dados e pague
+    o frete\r\nsimb\xF3lico de R$ 12,90:\n\nResgatar vale"
+  date: 
+  startsUnlocked: 1
+  important: 0
+  canReply: 0
+  replyButtonText: 
+  replyEventID: 
+  isPhishing: 1
+  educationalMessage: "Pr\xEAmio leg\xEDtimo n\xE3o cobra taxa nem frete para ser
+    entregue. Oferta boa demais para ser verdade\r\ncostuma ser s\xF3 uma isca para
+    capturar seus dados"

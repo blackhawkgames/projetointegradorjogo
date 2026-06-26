@@ -7,6 +7,7 @@ public class BrowserNewsPage : MonoBehaviour
 {
     [Header("Página")]
     public GameObject PageHandler;
+    public BrowserMission browserMission;
 
     [Header("Variáveis Base")]
     public GameObject NewsPanel;
@@ -15,19 +16,28 @@ public class BrowserNewsPage : MonoBehaviour
     public TextMeshProUGUI HelloText;
     public Image newsImage;
     public CanvasGroup StartingFade;
+    public bool HasOpened = false;
 
 
     [Header("Extras")]
     public float EntranceTime = 3f;
     public string HelloMessage;
 
+
+    private Coroutine currentLoadingRoutine;
     public void OpenNewsPage(string title, string content)
     {
+        if (currentLoadingRoutine != null)
+        {
+            StopCoroutine(currentLoadingRoutine);
+        }
+
         PageHandler.SetActive(true);
+        NewsPanel.SetActive(false);
         TitleText.text = title;
         ContentText.text = content;
         HelloText.text = HelloMessage;
-        StartCoroutine(LoadingStart());
+        currentLoadingRoutine = StartCoroutine(LoadingStart());
     }
 
     IEnumerator LoadingStart()
@@ -49,14 +59,24 @@ public class BrowserNewsPage : MonoBehaviour
         }
 
         NewsPanel.SetActive(true);
+        currentLoadingRoutine = null;
     }
 
     public void CloseNewsPage()
     {
-        StopCoroutine(LoadingStart());
+        if (currentLoadingRoutine != null)
+        {
+            StopCoroutine(currentLoadingRoutine);
+            currentLoadingRoutine = null;
+        }
         TitleText.text = "";
         ContentText.text = "";
         NewsPanel.SetActive (false);
         PageHandler.SetActive(false);
+        if (!HasOpened)
+        {
+            browserMission.IncreaseCount();
+        }
+        HasOpened = true;
     }
 }
