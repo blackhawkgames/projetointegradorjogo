@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c0d0f481a8b8f24496a7af043fc379d, type: 3}
+  m_Name: 1 17
+  m_EditorClassIdentifier: Assembly-CSharp::EmailData
+  emailID: renda
+  sender: 'Renda Garantida '
+  subject: 'Transforme R$ 100 em R$ 3.000 em 30 dias '
+  body: 'Nossa plataforma rende 30% ao dia, sem risco! Vagas limitadas. Comece agora
+    com
+
+    qualquer valor:
+
+
+    Quero investir'
+  date: 
+  startsUnlocked: 1
+  important: 0
+  canReply: 0
+  replyButtonText: 
+  replyEventID: 
+  isPhishing: 1
+  educationalMessage: "Promessa de lucro fixo e absurdo \xE9 marca de pir\xE2mide
+    ou golpe. Investimento de verdade n\xE3o\r\ngarante ganho di\xE1rio; voc\xEA
+    s\xF3 perde o que colocou."

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c0d0f481a8b8f24496a7af043fc379d, type: 3}
+  m_Name: 1 13
+  m_EditorClassIdentifier: Assembly-CSharp::EmailData
+  emailID: via
+  sender: 'FaltaLuz Atendimento '
+  subject: "Sua energia ser\xE1 CORTADA hoje \u2014 d\xE9bito em aberto "
+  body: 'Consta uma fatura vencida de R$ 138,40. Pra evitar o corte ainda hoje, pague
+    o boleto
+
+    atualizado em anexo:'
+  date: 
+  startsUnlocked: 1
+  important: 1
+  canReply: 0
+  replyButtonText: 
+  replyEventID: 
+  isPhishing: 1
+  educationalMessage: "No golpe do boleto, o criminoso troca o benefici\xE1rio e
+    o c\xF3digo de barras. Sempre gere a 2\xAA via no\r\napp oficial e confira para
+    quem o valor est\xE1 indo. Amea\xE7a de \"corte hoje\" \xE9 s\xF3 press\xE3o
+    para voc\xEA\r\npagar sem pensar."

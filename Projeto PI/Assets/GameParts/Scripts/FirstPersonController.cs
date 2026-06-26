@@ -78,6 +78,11 @@ public class FirstPersonController : MonoBehaviour
 
         if (weaponHolder != null)
             initialWeaponPos = weaponHolder.localPosition;
+
+        if (GameManager.Instance != null)
+        {
+            mouseSensitivity = GameManager.Instance.sensibilidadeMouse;
+        }
     }
 
     void Update()

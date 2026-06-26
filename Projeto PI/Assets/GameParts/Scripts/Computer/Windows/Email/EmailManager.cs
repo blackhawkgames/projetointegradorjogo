@@ -11,10 +11,6 @@ public class EmailManager : MonoBehaviour
     private List<EmailData> unlockedEmails = new List<EmailData>();
     private HashSet<string> readEmails = new HashSet<string>();
 
-    [Header("Player Stats")]
-    [SerializeField] private int riskLevel = 0;
-    [SerializeField] private int exposure = 0;
-
     [Header("Phishing Goals")]
     [SerializeField] private int correctlyIgnoredCount = 0;
     [SerializeField] private int targetIgnoredCount = 5;
@@ -93,8 +89,11 @@ public class EmailManager : MonoBehaviour
         if (!readEmails.Contains(email.emailID))
         {
             readEmails.Add(email.emailID);
-            riskLevel += 1;
-            Debug.Log($"E-mail lido. Nível de Risco atual: {riskLevel}");
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.risco += 1f;
+                Debug.Log($"E-mail lido. Nível de Risco Global atual: {GameManager.Instance.risco}");
+            }
         }
 
         SetupInteraction(email);
@@ -147,7 +146,11 @@ public class EmailManager : MonoBehaviour
     {
         Debug.Log("O jogador caiu no golpe!");
 
-        exposure += 5;
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.exposicao += 5f;
+            Debug.Log($"Exposição aumentada! Total Global: {GameManager.Instance.exposicao}");
+        }
 
         if (phishingOptionsPanel != null) phishingOptionsPanel.SetActive(false);
 
@@ -156,6 +159,8 @@ public class EmailManager : MonoBehaviour
             educationalText.text = currentEmail.educationalMessage;
             educationalPanel.SetActive(true);
         }
+
+        onMetaReached?.Invoke();
     }
 
     public void CloseEducationalPanel()

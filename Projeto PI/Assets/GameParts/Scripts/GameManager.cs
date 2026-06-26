@@ -14,6 +14,12 @@ public class GameManager : MonoBehaviour
     public float dinheiro = 0f;
     public float risco = 0f;
     public float exposicao = 0f;
+    public bool CompletouJogo = false;
+
+    [Header("Configurações do Jogo")]
+    public int qualidadeGrafica = 2;
+    public float volumeMaster = 1f;
+    public float sensibilidadeMouse = 2f;
 
     private void Awake()
     {
@@ -36,6 +42,24 @@ public class GameManager : MonoBehaviour
         dinheiro = data.dinheiro;
         risco = data.risco;
         exposicao = data.exposicao;
+        CompletouJogo = data.CompletouJogo;
+        qualidadeGrafica = data.qualidadeGrafica;
+        volumeMaster = (data.volumeMaster == 0f && data.sensibilidadeMouse == 0f) ? 1f : data.volumeMaster;
+        sensibilidadeMouse = data.sensibilidadeMouse == 0f ? 2f : data.sensibilidadeMouse;
+
+        ApplySettings();
+    }
+
+    public void ApplySettings()
+    {
+        QualitySettings.SetQualityLevel(qualidadeGrafica);
+        AudioListener.volume = volumeMaster;
+
+        FirstPersonController player = FindAnyObjectByType<FirstPersonController>();
+        if (player != null)
+        {
+            player.mouseSensitivity = sensibilidadeMouse;
+        }
     }
 
     public void SaveGame()
