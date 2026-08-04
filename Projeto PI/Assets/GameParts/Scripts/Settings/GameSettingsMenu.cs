@@ -33,7 +33,7 @@ public class GameSettingsMenu : MonoBehaviour
 
         GameManager.Instance.qualidadeGrafica = qualityIndex;
         GameManager.Instance.ApplySettings();
-        GameManager.Instance.SaveGame(); // Grava no save.json automaticamente
+        GameManager.Instance.SaveGame();
     }
 
     public void SetVolume(float volume)
