@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6173350821c514d4b90c0b2d3c807680, type: 3}
+  m_Name: Choice 1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueChoiceData
+  situationText: CJ do GTA Sandeiro
+  choices:
+  - choiceText: Eae mano, qual a boa?
+    riscoPorConsequencia: 0
+    exposicaoPorConsequencia: 0
+    mensagemEducativa: Bem bonzinho!
+    hasEvent: 1
+    eventId: oi
+    nextDialogueNode: {fileID: 11400000, guid: 47ef3c67ed4035c47be7b46349bcb9de, type: 2}
+  - choiceText: Vai se fuder!
+    riscoPorConsequencia: 0
+    exposicaoPorConsequencia: 0
+    mensagemEducativa: "T\xE1 xingando pq?"
+    hasEvent: 1
+    eventId: vsf
+    nextDialogueNode: {fileID: 11400000, guid: 84e4923ee5f9ae840b1c156382a39ef9, type: 2}
+  - choiceText: ...
+    riscoPorConsequencia: 0
+    exposicaoPorConsequencia: 0
+    mensagemEducativa: 
+    hasEvent: 0
+    eventId: 
+    nextDialogueNode: {fileID: 0}
