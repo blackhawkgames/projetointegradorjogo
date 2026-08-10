@@ -1,0 +1,597 @@
+Capítulo 3 — A Lanchonete 
+
+Visão geral do cenário 
+
+O capítulo se inicia com o personagem chegando ao seu local de trabalho: uma lanchonete de pequeno ou médio porte. O ambiente deve transmitir rotina intensa, desgaste físico e pressão constante. A composição da cena inclui, no mínimo, um balcão de atendimento, mesas para clientes, cozinha ao fundo, máquina de cartão, computador ou tablet de pedidos, impressora de comandas, telefone, cartaz de Wi-Fi e área de caixa. 
+
+O personagem veste o uniforme de atendente e inicia seu expediente. A partir desse momento, o jogador assume o controle e passa a interagir com clientes, equipamentos e situações comuns do trabalho. 
+
+O objetivo deste capítulo é apresentar riscos de segurança da informação em um ambiente cotidiano, mostrando que golpes digitais, engenharia social e exposição de dados também podem ocorrer em pequenos comércios. 
+
+Estado inicial dos indicadores 
+
+Nível de risco: mesmo valor ao fim do capítulo anterior 
+
+Exposição: mesmo valor ao fim do capítulo anterior 
+
+ 
+
+Primeira interação: início do expediente 
+
+Ao iniciar o turno, o jogador poderá interagir com diferentes elementos da lanchonete: 
+
+Computador ou tablet de pedidos 
+
+Máquina de cartão 
+
+Cliente no balcão 
+
+Telefone da lanchonete 
+
+Comanda impressa 
+
+Cartaz com Wi-Fi 
+
+ 
+
+Comportamento das opções 
+
+Cada elemento apresenta situações distintas de risco. Algumas interações são neutras, enquanto outras podem aumentar o nível de risco ou a exposição. 
+
+O jogador deverá analisar cada situação antes de agir, pois nem toda ameaça aparece de forma evidente. Algumas situações se apresentam como pedidos comuns de clientes, falhas técnicas, pressa no atendimento ou tarefas rotineiras. 
+
+ 
+
+Rota 1: Computador ou tablet de pedidos 
+
+O personagem acessa o sistema usado para registrar pedidos, consultar preços, alterar comandas e finalizar atendimentos. 
+
+O sistema contém informações operacionais da lanchonete, como pedidos em andamento, valores, formas de pagamento e dados básicos relacionados ao atendimento. 
+
+Evento de login no sistema 
+
+Ao iniciar o expediente, o jogador precisa acessar o sistema da lanchonete. 
+
+Opções disponíveis: 
+
+Usar senha forte 
+
+Usar senha simples 
+
+Deixar o sistema aberto para agilizar o atendimento 
+
+ 
+
+1. O jogador usa senha forte 
+
+Se o jogador utilizar uma senha segura, o acesso ocorre normalmente. 
+
+Consequências: 
+
+Nível de risco: sem alteração 
+
+Exposição: sem alteração 
+
+ 
+
+2. O jogador usa senha simples 
+
+Se o jogador utilizar uma senha fraca, como 123456, senha123, o próprio nome ou o nome da lanchonete, será exibido um alerta educativo. 
+
+Consequências: 
+
+Nível de risco: +2 
+
+Exposição: sem alteração inicial 
+
+Mensagem educativa: 
+
+Senhas simples facilitam acessos indevidos. Em sistemas de atendimento, isso pode permitir alteração de pedidos, acesso ao caixa, consulta de informações internas e uso indevido da conta do funcionário. 
+
+ 
+
+3. O jogador deixa o sistema aberto 
+
+Se o jogador deixar o sistema aberto sem bloqueio para agilizar o atendimento, qualquer pessoa próxima poderá visualizar ou alterar pedidos. 
+
+Consequências: 
+
+Nível de risco: +3 
+
+Exposição: +5 
+
+Mensagem educativa: 
+
+Deixar sistemas abertos em locais de atendimento facilita acessos indevidos, alterações em pedidos, exposição de dados e uso indevido do caixa. Mesmo em ambientes movimentados, o sistema deve ser bloqueado quando não estiver em uso. 
+
+ 
+
+Rota 2: Máquina de cartão 
+
+Durante o atendimento, um cliente informa que a máquina de cartão “parece estar com problema” e sugere uma solução rápida. 
+
+O jogador poderá: 
+
+Conferir a máquina normalmente 
+
+Aceitar ajuda do cliente 
+
+Digitar dados manualmente 
+
+Permitir que o cliente manipule a máquina longe do balcão 
+
+ 
+
+Evento de manipulação da máquina 
+
+1. O jogador confere a máquina 
+
+Se o jogador verificar a máquina, conferir o visor, confirmar o valor e manter o controle do equipamento, nenhum risco será aplicado. 
+
+Consequências: 
+
+Nível de risco: sem alteração 
+
+Exposição: sem alteração 
+
+ 
+
+2. O jogador aceita ajuda do cliente 
+
+Se o jogador permitir que o cliente tente “ajustar” a máquina ou mexa no equipamento sem supervisão adequada, será considerado aumento de risco. 
+
+Consequências: 
+
+Nível de risco: +2 
+
+Exposição: sem alteração inicial 
+
+Mensagem educativa: 
+
+Equipamentos de pagamento devem permanecer sob controle do atendente ou do caixa. Permitir manipulação indevida pode gerar cobranças incorretas, troca de equipamento ou tentativas de fraude. 
+
+ 
+
+3. O jogador digita dados manualmente 
+
+Se o jogador aceitar digitar dados do cartão manualmente, anotar informações ou fotografar o cartão para “resolver depois”, será considerada exposição grave de dados financeiros. 
+
+Consequências: 
+
+Nível de risco: +5 
+
+Exposição: +10 
+
+Mensagem educativa: 
+
+Dados de cartão não devem ser anotados, fotografados, enviados por mensagem ou digitados fora de sistemas autorizados. O atendente deve manter a máquina sob controle e garantir que o valor exibido esteja correto antes da confirmação. 
+
+ 
+
+4. O jogador permite que o cliente leve a máquina para longe 
+
+Se o jogador permite que o cliente leve a máquina para fora do campo de visão, haverá risco de troca, adulteração ou manipulação do equipamento. 
+
+Consequências: 
+
+Nível de risco: +3 
+
+Exposição: +5 
+
+Mensagem educativa: 
+
+A máquina de cartão deve permanecer visível durante toda a operação. O equipamento não deve ser levado para locais onde o atendente não consiga acompanhar a transação. 
+
+ 
+
+Rota 3: Cliente no balcão 
+
+Um cliente se aproxima do balcão dizendo estar com pressa. Ele afirma que já pagou por Pix e mostra rapidamente um comprovante no celular. 
+
+O ambiente está movimentado, há outros clientes esperando e o personagem precisa decidir como agir. 
+
+O jogador poderá: 
+
+Conferir o pagamento no sistema 
+
+Aceitar apenas a imagem do comprovante 
+
+Entregar o pedido sem confirmação 
+
+Pedir confirmação ao responsável pelo caixa 
+
+ 
+
+Evento de falso comprovante Pix 
+
+1. O jogador confere o pagamento 
+
+Se o jogador verificar se o valor realmente caiu na conta da lanchonete, nenhum risco será aplicado. 
+
+Consequências: 
+
+Nível de risco: sem alteração 
+
+Exposição: sem alteração 
+
+ 
+
+2. O jogador pede confirmação ao responsável 
+
+Se o jogador chamar o responsável pelo caixa para confirmar o pagamento, a ação será considerada segura. 
+
+Consequências: 
+
+Nível de risco: sem alteração 
+
+Exposição: sem alteração 
+
+Mensagem positiva: 
+
+Confirmar o recebimento antes de liberar o pedido evita prejuízos e reduz o risco de golpes com comprovantes falsos. 
+
+ 
+
+3. O jogador aceita apenas a imagem do comprovante 
+
+Se o jogador aceitar somente a imagem mostrada pelo cliente, será considerado risco de golpe. 
+
+Consequências: 
+
+Nível de risco: +2 
+
+Exposição: sem alteração 
+
+ 
+
+4. O jogador entrega o pedido sem confirmação 
+
+Se o jogador entregar o pedido sem confirmar o recebimento, será considerado que ele caiu em um golpe de falso comprovante. 
+
+Consequências: 
+
+Nível de risco: +3 
+
+Exposição: +3 
+
+Mensagem educativa: 
+
+Comprovantes de Pix podem ser falsificados. O pagamento deve ser confirmado diretamente na conta, no sistema do caixa ou por pessoa responsável, nunca apenas por imagem enviada ou mostrada rapidamente. 
+
+ 
+
+Rota 4: Telefone da lanchonete 
+
+O telefone da lanchonete toca. Uma pessoa se identifica como funcionária da empresa responsável pelo sistema de pedidos, pela máquina de cartão ou pelo banco utilizado pelo estabelecimento. 
+
+A pessoa afirma que há uma falha urgente e que precisa “atualizar o cadastro”, “corrigir o sistema” ou “validar um código”. 
+
+O jogador poderá: 
+
+Encerrar a ligação 
+
+Passar dados básicos da lanchonete 
+
+Informar senha ou código de acesso 
+
+Chamar o gerente 
+
+ 
+
+Evento de engenharia social 
+
+1. O jogador chama o gerente 
+
+Se o jogador recusar a solicitação e chamar o responsável, a ação será considerada segura. 
+
+Consequências: 
+
+Nível de risco: sem alteração 
+
+Exposição: sem alteração 
+
+Mensagem positiva: 
+
+Solicitações envolvendo senhas, códigos, pagamentos ou sistemas internos devem ser tratadas pelo responsável da lanchonete e verificadas por canais oficiais. 
+
+ 
+
+2. O jogador encerra a ligação 
+
+Se o jogador encerrar a ligação sem fornecer informações, nenhum risco adicional será aplicado. 
+
+Consequências: 
+
+Nível de risco: sem alteração 
+
+Exposição: sem alteração 
+
+ 
+
+3. O jogador passa dados básicos 
+
+Se o jogador fornecer informações como nome do gerente, horário de funcionamento, número interno, rotina do caixa ou dados da operação, haverá aumento moderado de exposição. 
+
+Consequências: 
+
+Nível de risco: +2 
+
+Exposição: +3 
+
+Mensagem educativa: 
+
+Mesmo informações aparentemente simples podem ajudar golpistas a montar abordagens mais convincentes. Dados internos da rotina da empresa não devem ser fornecidos sem confirmação. 
+
+ 
+
+4. O jogador informa senha ou código 
+
+Se o jogador informar senha, código recebido por SMS, código de autenticação, dados do sistema ou acesso ao caixa, será considerado comprometimento grave. 
+
+Consequências: 
+
+Nível de risco: +5 
+
+Exposição: +10 
+
+Mensagem educativa: 
+
+Engenharia social ocorre quando alguém manipula a vítima para obter informações ou acesso. Golpistas podem se passar por suporte técnico, banco, fornecedor ou empresa de pagamento. Senhas e códigos nunca devem ser informados por telefone ou mensagem. 
+
+ 
+
+Rota 5: Comanda impressa 
+
+A impressora gera comandas com detalhes do pedido, nome do cliente, forma de pagamento e, em alguns casos, telefone, endereço ou observações do atendimento. 
+
+O jogador poderá: 
+
+Entregar a comanda corretamente 
+
+Deixar comandas acumuladas no balcão 
+
+Jogar comandas no lixo comum 
+
+Guardar comandas antigas sem necessidade 
+
+ 
+
+Evento de descarte inadequado 
+
+1. O jogador organiza corretamente 
+
+Se o jogador mantém as comandas apenas pelo tempo necessário e as guarda em local adequado, nenhum risco será aplicado. 
+
+Consequências: 
+
+Nível de risco: sem alteração 
+
+Exposição: sem alteração 
+
+ 
+
+2. O jogador deixa comandas expostas 
+
+Se as comandas ficarem visíveis no balcão, clientes ou terceiros poderão visualizar informações de pedidos e dados pessoais. 
+
+Consequências: 
+
+Nível de risco: +2 
+
+Exposição: +5 
+
+Mensagem educativa: 
+
+Comandas deixadas à vista podem revelar informações sobre clientes, pedidos, pagamentos e rotinas internas. Papéis impressos também fazem parte da segurança da informação. 
+
+ 
+
+3. O jogador joga comandas no lixo comum 
+
+Se comandas com dados de clientes forem descartadas sem cuidado, haverá risco de exposição física de informações. 
+
+Consequências: 
+
+Nível de risco: +3 
+
+Exposição: +7 
+
+Mensagem educativa: 
+
+Comandas, recibos e comprovantes devem ser guardados ou descartados de forma segura quando contêm informações de clientes. O descarte inadequado pode permitir que terceiros acessem dados sem autorização. 
+
+ 
+
+4. O jogador guarda comandas antigas sem necessidade 
+
+Se o jogador acumular comandas antigas sem finalidade clara, haverá risco de exposição futura. 
+
+Consequências: 
+
+Nível de risco: +2 
+
+Exposição: +4 
+
+Mensagem educativa: 
+
+Guardar documentos por mais tempo do que o necessário aumenta a chance de perda, acesso indevido ou descarte incorreto. Informações devem ser mantidas apenas enquanto forem necessárias para o atendimento ou controle interno. 
+
+ 
+
+Rota 6: Cartaz com Wi-Fi 
+
+Na parede da lanchonete há um cartaz com o nome e a senha do Wi-Fi para clientes. O mesmo roteador também é usado para o sistema interno da lanchonete. 
+
+O jogador poderá: 
+
+Manter a senha visível 
+
+Informar a senha apenas quando solicitado 
+
+Perceber o risco e avisar o gerente 
+
+Ignorar completamente 
+
+ 
+
+Evento de rede insegura 
+
+1. O jogador avisa o gerente 
+
+Se o jogador perceber que clientes e sistema interno usam a mesma rede, poderá alertar o responsável. 
+
+Consequências: 
+
+Nível de risco: sem alteração 
+
+Exposição: sem alteração 
+
+Mensagem positiva: 
+
+Separar a rede dos clientes da rede interna reduz o risco de acesso indevido a sistemas, máquinas, tablets, impressoras e dispositivos administrativos. 
+
+ 
+
+2. O jogador informa a senha apenas quando solicitado 
+
+Se o jogador apenas informa a senha do Wi-Fi para clientes quando solicitado, mas não percebe que a rede é a mesma dos sistemas internos, haverá risco moderado. 
+
+Consequências: 
+
+Nível de risco: +1 
+
+Exposição: sem alteração inicial 
+
+Mensagem educativa: 
+
+Mesmo quando a senha é compartilhada de forma controlada, a rede de clientes deve ser separada da rede usada pelos sistemas internos da lanchonete. 
+
+ 
+
+3. O jogador mantém a senha visível 
+
+Se o jogador ignora o risco e mantém a senha exposta no cartaz, haverá aumento moderado de risco. 
+
+Consequências: 
+
+Nível de risco: +2 
+
+Exposição: sem alteração inicial 
+
+ 
+
+4. Um cliente usa a rede de forma indevida 
+
+Caso o jogador já tenha acumulado alto nível de risco, poderá ocorrer um evento em que um cliente tenta acessar dispositivos conectados à mesma rede. 
+
+Consequências: 
+
+Nível de risco: +4 
+
+Exposição: +5 
+
+Mensagem educativa: 
+
+Redes Wi-Fi para clientes devem ser separadas da rede usada por sistemas internos, caixas, tablets, impressoras e máquinas administrativas. Usar a mesma rede aumenta o risco de acesso indevido aos dispositivos da empresa. 
+
+ 
+
+Encerramento do capítulo 
+
+Ao fim do expediente, o personagem se prepara para sair da lanchonete. O movimento diminui, as mesas começam a esvaziar e o ambiente passa a transmitir cansaço e repetição. 
+
+Antes de encerrar o turno, o jogador deverá decidir se finaliza corretamente os sistemas e organiza os materiais utilizados durante o atendimento. 
+
+Opções finais: 
+
+Fechar o sistema de pedidos 
+
+Desligar ou bloquear o computador/tablet 
+
+Guardar comandas e recibos 
+
+Deixar tudo aberto para o próximo turno 
+
+ 
+
+1. Encerramento seguro 
+
+Se o jogador fechar os sistemas, guardar documentos e bloquear os equipamentos, o capítulo termina sem penalidade adicional. 
+
+Consequências: 
+
+Nível de risco: sem alteração 
+
+Exposição: sem alteração 
+
+Mensagem positiva: 
+
+Encerrar corretamente o expediente reduz o risco de acesso indevido, perda de informações e exposição de dados após o horário de trabalho. 
+
+ 
+
+2. Encerramento descuidado 
+
+Se o jogador deixar sistemas abertos, comandas expostas ou equipamentos desbloqueados, haverá penalidade final. 
+
+Consequências: 
+
+Nível de risco: +3 
+
+Exposição: +5 
+
+Mensagem educativa: 
+
+Mesmo após o fim do expediente, informações e sistemas continuam vulneráveis. Equipamentos devem ser bloqueados, documentos devem ser guardados e dados de atendimento não devem permanecer expostos. 
+
+ 
+
+Ensinamentos 
+
+Falso comprovante Pix 
+
+O falso comprovante Pix é um golpe em que o criminoso mostra ou envia uma imagem adulterada para fingir que realizou o pagamento. Em uma lanchonete, esse golpe pode ocorrer no balcão, principalmente em momentos de pressa, fila ou distração. 
+
+Para evitar esse risco, o atendente nunca deve liberar produtos apenas com base na imagem do comprovante. O pagamento deve ser confirmado diretamente na conta, no sistema do caixa ou com o responsável financeiro. 
+
+ 
+
+Engenharia social 
+
+Engenharia social é uma técnica usada para manipular pessoas e obter informações, senhas, códigos ou acessos. No ambiente da lanchonete, o golpista pode se passar por suporte técnico, banco, fornecedor, empresa da máquina de cartão ou funcionário de algum serviço utilizado pelo estabelecimento. 
+
+Para evitar esse tipo de golpe, senhas, códigos de confirmação, dados internos e acessos ao sistema nunca devem ser informados por telefone ou mensagem. Situações suspeitas devem ser encaminhadas ao gerente ou responsável. 
+
+ 
+
+Segurança em máquinas de cartão 
+
+A máquina de cartão deve permanecer sob controle do atendente ou do caixa. O valor exibido precisa ser conferido antes do pagamento, e o equipamento não deve ser entregue para manipulação fora do campo de visão do funcionário. 
+
+Dados de cartão nunca devem ser anotados, fotografados, enviados por mensagem ou digitados fora dos sistemas autorizados. Qualquer falha na máquina deve ser resolvida por canais oficiais. 
+
+ 
+
+Proteção de dados em comandas e recibos 
+
+Comandas, recibos e comprovantes podem conter informações relevantes, como nome do cliente, telefone, detalhes do pedido, forma de pagamento, endereço ou observações internas. Mesmo sendo papéis simples, esses documentos podem causar exposição de dados se forem deixados visíveis ou descartados de forma inadequada. 
+
+Para reduzir esse risco, comandas e recibos devem ficar acessíveis apenas a quem realmente precisa deles. Após o uso, devem ser guardados corretamente ou descartados de forma segura, evitando que clientes, terceiros ou pessoas não autorizadas tenham acesso às informações. 
+
+ 
+
+Senhas e sistemas de atendimento 
+
+Sistemas de pedidos, caixas e tablets de atendimento devem ser protegidos por senhas adequadas. Senhas simples, compartilhadas ou deixadas anotadas facilitam acessos indevidos. 
+
+O sistema também não deve permanecer aberto sem necessidade. Sempre que o atendente se afastar, o equipamento deve ser bloqueado ou protegido para impedir uso não autorizado. 
+
+ 
+
+Wi-Fi para clientes 
+
+O Wi-Fi oferecido aos clientes deve ser separado da rede usada pelos sistemas internos da lanchonete. Utilizar a mesma rede para clientes, caixa, tablets, impressoras e equipamentos administrativos aumenta o risco de acesso indevido. 
+
+A senha do Wi-Fi de clientes pode ser compartilhada de forma controlada, mas a rede interna deve permanecer protegida. Separar as redes reduz a possibilidade de interferência nos sistemas da empresa. 
+
+ 

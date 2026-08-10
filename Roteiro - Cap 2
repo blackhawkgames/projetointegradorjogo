@@ -1,0 +1,285 @@
+Capítulo 2 — A Rua 
+
+Visão geral do cenário 
+
+O capítulo se inicia com o personagem deixando seu apartamento e iniciando uma caminhada pela cidade. O semblante do personagem permanece abatido, reforçando a sensação de cansaço, isolamento e desmotivação. 
+
+A cidade deve apresentar uma estética cinza, melancólica e sem vida. O trajeto entre casa e trabalho contempla, no mínimo, cinco quadras, permitindo que o jogador explore o ambiente e observe diferentes elementos urbanos. 
+
+Durante o caminho, o personagem encontra diversos anúncios espalhados em postes, muros, pontos de ônibus e fachadas. Alguns anúncios são inofensivos, enquanto outros apresentam sinais claros de golpes comuns em ambientes urbanos. 
+
+O jogador controla o personagem desde o início da sequência. 
+
+Estado inicial dos indicadores: 
+
+Nível de risco: mesmo valor ao fim do capítulo anterior 
+
+Exposição: mesmo valor ao fim do capítulo anterior 
+
+ 
+
+Primeira interação: anúncios 
+
+Ao caminhar pela rua, o jogador se depara com diversos cartazes e anúncios. A maioria apresenta propostas duvidosas, promessas exageradas ou formas suspeitas de contato. 
+
+Tipos de anúncios presentes no cenário: 
+
+Dinheiro perdido 
+
+Investimento fácil 
+
+Produtos baratos 
+
+QR Code falso 
+
+Falsa vaga de emprego 
+
+Anúncios inofensivos 
+
+ 
+
+Comportamento das opções 
+
+Diante de cada anúncio, o jogador terá três opções principais: 
+
+Ignorar 
+
+Apenas ler 
+
+Entrar em contato 
+
+Ignorar 
+
+Se o jogador ignorar o anúncio, nenhum evento será acionado. 
+
+Consequências: 
+
+Nível de risco: sem alteração 
+
+Exposição: sem alteração 
+
+Apenas ler 
+
+Se o jogador apenas ler o anúncio, uma descrição breve será exibida, permitindo que ele observe sinais de possível fraude, como promessas exageradas, erros de escrita, urgência artificial ou ausência de informações confiáveis. 
+
+Consequências: 
+
+Nível de risco: sem alteração 
+
+Exposição: sem alteração 
+
+Entrar em contato 
+
+Se o jogador decidir entrar em contato com o anúncio, uma sequência interativa será iniciada. Essa ação representa maior aproximação com uma possível ameaça. 
+
+Consequências iniciais: 
+
+Nível de risco: +2 
+
+Exposição: sem alteração inicial 
+
+A partir desse ponto, o impacto nos indicadores dependerá do tipo de anúncio e das escolhas feitas pelo jogador. 
+
+ 
+
+Rota 1: Dinheiro perdido 
+
+O personagem encontra um cartaz afirmando que pessoas podem ter dinheiro esquecido ou valores bloqueados a receber. O anúncio promete recuperar rapidamente o dinheiro mediante contato por telefone ou aplicativo de mensagens. 
+
+Ao entrar em contato, o suposto atendente solicita dados pessoais para “verificação”. 
+
+Possíveis dados solicitados: 
+
+Nome completo 
+
+CPF 
+
+Data de nascimento 
+
+Dados bancários 
+
+Pagamento de uma taxa antecipada 
+
+1. O jogador identifica o golpe 
+
+Se o jogador perceber que a proposta é suspeita e encerrar o contato, nenhum efeito adicional será aplicado. 
+
+Consequências: 
+
+Nível de risco: permanece conforme já acumulado 
+
+Exposição: sem alteração adicional 
+
+2. O jogador fornece informações 
+
+Se o jogador informar dados pessoais ou bancários, será exibida uma mensagem explicativa sobre golpes de falsa recuperação de valores. 
+
+Consequências: 
+
+Nível de risco: permanece conforme já acumulado 
+
+Exposição: +5 
+
+ 
+
+Rota 2: Investimento fácil 
+
+O personagem encontra um anúncio prometendo lucro rápido, retorno garantido e pouco ou nenhum risco. O cartaz utiliza frases chamativas, como “multiplique seu dinheiro” ou “ganhos diários garantidos”. 
+
+Ao entrar em contato, o jogador é direcionado para uma conversa em que o suposto investidor tenta convencê-lo a enviar dinheiro ou entrar em um grupo fechado. 
+
+1. O jogador desconfia da promessa 
+
+Se o jogador perceber que retorno garantido e lucro fácil são sinais de golpe, ele poderá encerrar a conversa. 
+
+Consequências: 
+
+Nível de risco: permanece conforme já acumulado 
+
+Exposição: sem alteração adicional 
+
+2. O jogador aceita a proposta 
+
+Se o jogador aceitar participar do investimento falso, será considerado que ele caiu no golpe. 
+
+Consequências: 
+
+Nível de risco: +3 
+
+Exposição: +5 
+
+Uma mensagem educativa será exibida explicando que promessas de lucro rápido, pressão para decidir imediatamente e ausência de informações oficiais são sinais comuns de fraude financeira. 
+
+ 
+
+Rota 3: Produtos baratos 
+
+O personagem encontra anúncios oferecendo produtos muito abaixo do preço comum, como celulares, roupas, eletrônicos ou acessórios. 
+
+Ao entrar em contato, o vendedor informa que há poucas unidades disponíveis e pressiona o jogador a concluir a compra rapidamente. 
+
+1. O jogador recusa a compra 
+
+Se o jogador desconfiar do preço muito baixo e encerrar o contato, nenhum efeito adicional será aplicado. 
+
+Consequências: 
+
+Nível de risco: permanece conforme já acumulado 
+
+Exposição: sem alteração adicional 
+
+2. O jogador realiza a compra 
+
+Se o jogador aceitar a oferta e informar dados para entrega ou pagamento, será considerado que ele caiu em um golpe de venda falsa. 
+
+Consequências: 
+
+Nível de risco: +2 
+
+Exposição: +5 
+
+A mensagem explicativa informa que preços muito abaixo do normal, vendedores apressados, ausência de loja confiável e pagamento antecipado são sinais de alerta. 
+
+ 
+
+Rota 4: QR Code falso 
+
+O personagem encontra um cartaz com um QR Code prometendo descontos, brindes, promoções ou acesso a um serviço gratuito. 
+
+Ao interagir com o anúncio, o jogador poderá escanear o QR Code. Caso faça isso, uma página suspeita será aberta. 
+
+Consequências iniciais ao escanear: 
+
+Nível de risco: +2 
+
+Exposição: sem alteração inicial 
+
+Evento de página falsa 
+
+A página aberta solicita que o jogador informe dados pessoais ou baixe um arquivo para liberar a suposta recompensa. 
+
+1. O jogador fecha a página 
+
+Se o jogador fechar a página sem informar dados ou baixar arquivos, apenas o aumento inicial será mantido. 
+
+Consequências: 
+
+Nível de risco: permanece conforme já acumulado 
+
+Exposição: sem alteração adicional 
+
+2. O jogador informa dados ou baixa o arquivo 
+
+Se o jogador preencher o formulário ou baixar o arquivo indicado pela página, será considerado que houve exposição grave. 
+
+Consequências: 
+
+Nível de risco: +5 
+
+Exposição: +10 
+
+Uma mensagem educativa será exibida explicando que QR Codes em locais públicos podem direcionar para sites falsos, páginas de roubo de dados ou downloads maliciosos. 
+
+ 
+
+Rota 5: Falsa vaga de emprego 
+
+O personagem encontra um anúncio oferecendo uma vaga de emprego com salário alto, contratação imediata e poucos requisitos. 
+
+Ao entrar em contato, o suposto recrutador solicita dados pessoais, envio de documentos ou pagamento de uma taxa para cadastro, exame, uniforme ou treinamento. 
+
+1. O jogador identifica a fraude 
+
+Se o jogador perceber que a vaga é suspeita e recusar o envio de dados ou pagamentos, nenhum efeito adicional será aplicado. 
+
+Consequências: 
+
+Nível de risco: permanece conforme já acumulado 
+
+Exposição: sem alteração adicional 
+
+2. O jogador envia dados ou paga a taxa 
+
+Se o jogador enviar documentos, fotos, dados pessoais ou realizar pagamento, será considerado que ele caiu no golpe. 
+
+Consequências: 
+
+Nível de risco: +3 
+
+Exposição: +7 
+
+A mensagem explicativa informa que vagas falsas costumam usar promessas exageradas, contratação imediata, ausência de empresa identificável e cobrança antecipada como forma de enganar vítimas. 
+
+ 
+
+Rota 6: Anúncios inofensivos 
+
+Alguns anúncios encontrados durante o trajeto são legítimos ou irrelevantes, como avisos de eventos locais, pequenos comércios, serviços comuns ou comunicados de bairro. 
+
+Se o jogador apenas ler ou interagir com esses anúncios, nenhum evento perigoso será acionado. 
+
+Consequências: 
+
+Nível de risco: sem alteração adicional 
+
+Exposição: sem alteração adicional 
+
+Esses anúncios servem para evitar que todos os elementos do cenário sejam ameaças óbvias, exigindo que o jogador analise cada situação com atenção. 
+
+ 
+
+Ensinamentos 
+
+Golpes em cartazes de rua 
+
+Golpes em cartazes de rua usam promessas chamativas para atrair pessoas e convencê-las a entrar em contato, acessar links, escanear QR Codes ou fornecer dados pessoais. Esses anúncios costumam oferecer dinheiro fácil, produtos muito baratos, vagas de emprego falsas ou promoções urgentes. Para evitar esse tipo de golpe, é importante desconfiar de propostas exageradas, não informar dados pessoais sem confirmar a origem, evitar pagamentos antecipados, verificar se a empresa realmente existe e ter cuidado com QR Codes expostos em locais públicos. 
+
+QR Code falso 
+
+QR Codes falsos podem levar o usuário a sites perigosos, páginas falsas ou downloads maliciosos. Como o código esconde o endereço real antes do acesso, ele pode ser usado para enganar pessoas em locais públicos. Para evitar esse risco, é importante verificar o endereço do site antes de continuar, não baixar arquivos desconhecidos, não preencher formulários suspeitos e desconfiar de QR Codes colados em postes, muros, caixas eletrônicos, cardápios ou cartazes sem identificação confiável. 
+
+Falsa vaga de emprego 
+
+Falsas vagas de emprego são golpes que usam a necessidade de trabalho para obter dados pessoais, documentos ou dinheiro da vítima. Normalmente, prometem salário alto, contratação rápida e poucos requisitos. Também podem cobrar taxas para exames, cursos, uniformes ou cadastro. Para evitar esse golpe, é importante pesquisar a empresa, confirmar a vaga em canais oficiais, desconfiar de cobranças antecipadas e nunca enviar documentos pessoais sem ter certeza de que a oportunidade é legítima. 
+
+ 

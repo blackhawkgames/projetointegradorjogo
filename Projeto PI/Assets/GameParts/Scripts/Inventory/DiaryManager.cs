@@ -5,7 +5,7 @@ using TMPro;
 public class DiaryManager : MonoBehaviour
 {
     public GameObject DiaryIcon;
-    public string DiaryText;
+    [TextArea(5, 20)] public string DiaryText;
     public TextMeshProUGUI diaryText;
 
     private void Start()

@@ -1,0 +1,103 @@
+Capítulo 1 — O quarto 
+
+Visão geral do cenário 
+
+O capítulo se inicia com o personagem sozinho em seu quarto. O ambiente deve transmitir cansaço, apatia e desmotivação. A composição da cena inclui, no mínimo, uma cama posicionada em um dos cantos do quarto e um computador sobre a escrivaninha. 
+
+A sequência inicial mostra o personagem acordando, levantando-se lentamente e dirigindo-se até o computador. A partir desse momento, o jogador assume o controle e passa a interagir com os elementos disponíveis na tela. 
+
+Estado inicial dos indicadores: 
+
+Nível de risco: 0  
+
+Exposição: 0  
+
+ 
+
+Primeira interação: computador 
+
+Na tela inicial do computador, o jogador terá acesso a quatro ícones: 
+
+E-mail  
+
+Google  
+
+Sistema de arquivos  
+
+Configurações  
+
+Comportamento das opções 
+
+Sistema de arquivos e Configurações não acionam eventos relevantes neste momento, funcionando apenas como elementos neutros de ambientação e exploração.  
+
+E-mail e Google iniciam sequências interativas com possibilidade de impacto nos indicadores de risco e exposição.  
+
+ 
+
+Rota 1: E-mail 
+
+Ao selecionar a opção E-mail, o jogador visualiza uma caixa de entrada com diversas mensagens. Entre elas, haverá pelo menos um e-mail contendo uma tentativa de phishing. 
+
+O jogador poderá abrir quantas mensagens desejar. Cada e-mail aberto aumentará o nível de risco em 1 ponto, independentemente de a mensagem ser legítima ou maliciosa. Esse aumento representa a exposição progressiva do usuário a conteúdos potencialmente perigosos. 
+
+Evento de phishing 
+
+Caso o jogador abra o e-mail malicioso, haverá duas possibilidades: 
+
+1. O jogador identifica a ameaça 
+
+Se o jogador reconhecer que se trata de uma tentativa de golpe e não interagir de forma indevida, nenhum efeito adicional será aplicado. 
+
+Nível de risco: permanece conforme já acumulado  
+
+Exposição: sem alteração adicional  
+
+2. O jogador cai no golpe 
+
+Se o jogador for enganado pela tentativa de phishing, uma mensagem explicativa será exibida, apresentando de forma educativa como esse tipo de ataque funciona e quais sinais poderiam indicar a fraude. 
+
+Consequências: 
+
+Nível de risco: permanece inalterado  
+
+Exposição: +5  
+
+ 
+
+Rota 2: Google 
+
+Ao selecionar a opção Google, o jogador acessa uma interface com diversos anúncios e links suspeitos. O objetivo desta seção é simular um ambiente digital poluído, com armadilhas comuns de navegação. 
+
+Cada clique em anúncios ou links suspeitos aumentará o nível de risco em 2 pontos. 
+
+Evento de instalação de malware 
+
+Alguns links específicos estarão associados a arquivos ou páginas maliciosas. Ao acessá-los, será exibido um pop-up solicitando permissão para instalação de um suposto programa. 
+
+1. O jogador recusa a instalação 
+
+Se o jogador negar a permissão, apenas o aumento inicial referente ao clique será mantido. 
+
+2. O jogador autoriza a instalação 
+
+Se o jogador conceder a permissão, será considerado que houve comprometimento do sistema. 
+
+Consequências: 
+
+Nível de risco: +5  
+
+Exposição: +10 
+
+ 
+
+Ensinamentos: 
+
+Phishing: 
+
+	Phishing é um golpe digital que tenta enganar você para roubar informações, como senhas, dados pessoais ou bancários. Normalmente, ele aparece em e-mails, mensagens ou sites falsos que parecem confiáveis. O objetivo é fazer você clicar em links, baixar arquivos ou informar seus dados sem perceber o risco. Para evitar esse tipo de ataque, é importante desconfiar de mensagens urgentes ou alarmantes, verificar o remetente e o endereço do site, não clicar em links suspeitos, não baixar arquivos de origem desconhecida e nunca informar senhas ou dados pessoais sem antes confirmar se a fonte é verdadeira. 
+
+Virus: 
+
+	Vírus são programas maliciosos criados para invadir, danificar ou comprometer um dispositivo sem a autorização do usuário. Eles podem prejudicar o funcionamento do sistema, apagar arquivos, roubar informações ou abrir caminho para outras ameaças. Normalmente, esse tipo de ameaça chega por meio de downloads suspeitos, anexos maliciosos, sites inseguros ou programas falsos. Para evitar infecções, é importante não baixar arquivos de origem desconhecida, evitar clicar em links suspeitos, manter o sistema e o antivírus atualizados e instalar apenas programas de fontes confiáveis. 
+
+ 
