@@ -5552,8 +5552,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3173c9516c9929940a6c9ab9a8a46b01, type: 3}
-<<<<<<< Updated upstream
-=======
 --- !u!1 &527403921596438667 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5709110754520416019, guid: 3173c9516c9929940a6c9ab9a8a46b01,
@@ -5572,7 +5570,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b1cc46fab57f14419470127d1595e04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
->>>>>>> Stashed changes
 --- !u!1001 &631413748725805340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6197,8 +6194,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 2604073325391054354, guid: a6bc73ad7a25c074fbe8ac7ac4634d14,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -6229,7 +6224,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     - target: {fileID: 2703492054315241937, guid: a6bc73ad7a25c074fbe8ac7ac4634d14,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -7465,8 +7459,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6bc73ad7a25c074fbe8ac7ac4634d14, type: 3}
-<<<<<<< Updated upstream
-=======
 --- !u!114 &1358094934248419039 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1999700229884101679, guid: a6bc73ad7a25c074fbe8ac7ac4634d14,
@@ -7491,7 +7483,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e0d48fcbfbb3644780c85420088e867, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceManager
->>>>>>> Stashed changes
 --- !u!1001 &1714977768454699312
 PrefabInstance:
   m_ObjectHideFlags: 0
