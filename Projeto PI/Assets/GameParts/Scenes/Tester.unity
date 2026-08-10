@@ -1039,12 +1039,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!1 &623628765 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4633170300335953398, guid: 6698e0411a150664aa6e10cc4ac79298,
-    type: 3}
-  m_PrefabInstance: {fileID: 6940608480335836504}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &630462488
 GameObject:
   m_ObjectHideFlags: 0
@@ -1845,6 +1839,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6352120032432943108, guid: d2b3c6d82596823459c7ea6d68d89469,
+        type: 3}
+      propertyPath: Manager
+      value: 
+      objectReference: {fileID: 1358094934248419039}
+    - target: {fileID: 6352120032432943108, guid: d2b3c6d82596823459c7ea6d68d89469,
+        type: 3}
+      propertyPath: MainUIManager
+      value: 
+      objectReference: {fileID: 1012698319}
     - target: {fileID: 8868206538963537140, guid: d2b3c6d82596823459c7ea6d68d89469,
         type: 3}
       propertyPath: m_Name
@@ -2580,6 +2584,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4583272806671486518, guid: 0353c764f35406e47bc10f638fde65f1,
+        type: 3}
+      propertyPath: Manager
+      value: 
+      objectReference: {fileID: 1358094934248419039}
+    - target: {fileID: 4583272806671486518, guid: 0353c764f35406e47bc10f638fde65f1,
+        type: 3}
+      propertyPath: MainUIManager
+      value: 
+      objectReference: {fileID: 1012698319}
+    - target: {fileID: 4583272806671486518, guid: 0353c764f35406e47bc10f638fde65f1,
+        type: 3}
+      propertyPath: Consequences.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 527403921596438667}
     - target: {fileID: 7028848688418327305, guid: 0353c764f35406e47bc10f638fde65f1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5683,18 +5702,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC AI
       objectReference: {fileID: 0}
+    - target: {fileID: 5709110754520416019, guid: 3173c9516c9929940a6c9ab9a8a46b01,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3173c9516c9929940a6c9ab9a8a46b01, type: 3}
+--- !u!1 &527403921596438667 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5709110754520416019, guid: 3173c9516c9929940a6c9ab9a8a46b01,
+    type: 3}
+  m_PrefabInstance: {fileID: 527403921596438666}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &527403921596438668 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9131882507556892163, guid: 3173c9516c9929940a6c9ab9a8a46b01,
     type: 3}
   m_PrefabInstance: {fileID: 527403921596438666}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 527403921596438667}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0b1cc46fab57f14419470127d1595e04, type: 3}
@@ -5869,11 +5899,16 @@ PrefabInstance:
       propertyPath: sceneEvents.Array.data[1].onEventTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1107912847}
-    - target: {fileID: 7607634732349140835, guid: a6bc73ad7a25c074fbe8ac7ac4634d14,
+    - target: {fileID: 2781704497716410257, guid: a6bc73ad7a25c074fbe8ac7ac4634d14,
         type: 3}
-      propertyPath: replyEvents.Array.data[0].OnReply.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 623628765}
+      propertyPath: sceneEvents.Array.data[0].onEventTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781704497716410257, guid: a6bc73ad7a25c074fbe8ac7ac4634d14,
+        type: 3}
+      propertyPath: sceneEvents.Array.data[1].onEventTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayDialogue
+      objectReference: {fileID: 0}
     - target: {fileID: 7852444266446044075, guid: a6bc73ad7a25c074fbe8ac7ac4634d14,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5934,6 +5969,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6bc73ad7a25c074fbe8ac7ac4634d14, type: 3}
+--- !u!114 &1358094934248419039 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1999700229884101679, guid: a6bc73ad7a25c074fbe8ac7ac4634d14,
+    type: 3}
+  m_PrefabInstance: {fileID: 1358094934248419038}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eac1f7ca2fc04a24fb71640fe6647e20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StreetAdsManager
 --- !u!114 &1358094934248419040 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2781704497716410257, guid: a6bc73ad7a25c074fbe8ac7ac4634d14,
