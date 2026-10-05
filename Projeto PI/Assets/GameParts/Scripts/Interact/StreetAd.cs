@@ -19,6 +19,7 @@ public class StreetAd : MonoBehaviour
     public float Risco = 1f;
 
     [Header("Interações")]
+    public UnityEvent WinConsequences;
     public UnityEvent Consequences;
 
     private bool HasInteracted;
@@ -49,5 +50,14 @@ public class StreetAd : MonoBehaviour
         HasInteracted = true;
         CanPlayerInteract = false;
         Consequences?.Invoke();
+    }
+
+    public void ConsequenciaIgnorada()
+    {
+        if (IsOnlyVisual) return;
+
+        HasInteracted = true;
+        CanPlayerInteract = false;
+        WinConsequences?.Invoke();
     }
 }

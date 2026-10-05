@@ -43,7 +43,7 @@ public class StreetAdsManager : MonoBehaviour
 
         if (Keyboard.current.digit2Key.wasPressedThisFrame || Keyboard.current.numpad2Key.wasPressedThisFrame)
         {
-            CloseNews();
+            ChooseWinConsequence();
         }
     }
 
@@ -107,6 +107,16 @@ public class StreetAdsManager : MonoBehaviour
             GameManager.Instance.risco += RiscoPorConsequencia;
         }
         
+        CloseNews();
+    }
+
+    public void ChooseWinConsequence()
+    {
+        if (currentAd != null)
+        {
+            currentAd.ConsequenciaIgnorada();
+        }
+
         CloseNews();
     }
 

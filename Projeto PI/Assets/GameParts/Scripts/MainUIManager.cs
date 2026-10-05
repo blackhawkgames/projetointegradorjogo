@@ -17,9 +17,12 @@ public class MainUIManager : MonoBehaviour
 
     [Header("Referências para HUD")]
     public TextMeshProUGUI CustomHintText;
+    public TextMeshProUGUI CustomAlertText;
+    public CanvasGroup AlertTextCanvasGroup;
     public CanvasGroup HintTextCanvasGroup;
     public string DefaultHintText;
     public float HintFadeDuration = 4f;
+    public float AlertFadeDuration = 6f;
 
     [Header("Referencias para Pause")]
     public GameObject PauseTAB;
@@ -148,6 +151,15 @@ public class MainUIManager : MonoBehaviour
         currentFade = StartCoroutine(HintRoutine());
     }
 
+    public void ShowCustomAlert(string alertText)
+    {
+        CustomAlertText.text = alertText;
+        if (currentFade != null)
+            StopCoroutine(currentFade);
+
+        currentFade = StartCoroutine(AlertRoutine());
+    }
+
     public void ShowDefaultHint()
     {
         CustomHintText.text = DefaultHintText;
@@ -162,6 +174,13 @@ public class MainUIManager : MonoBehaviour
         FadeIn(HintTextCanvasGroup);
         yield return new WaitForSeconds(HintFadeDuration);
         FadeOut(HintTextCanvasGroup);
+    }
+
+    IEnumerator AlertRoutine()
+    {
+        FadeIn(AlertTextCanvasGroup);
+        yield return new WaitForSeconds(AlertFadeDuration);
+        FadeOut(AlertTextCanvasGroup);
     }
 
     public void FadeIn(CanvasGroup targetCanvasGroup)

@@ -43,7 +43,8 @@ MonoBehaviour:
   - {fileID: 5554233046797042475}
   - {fileID: -3455318587193190595}
   - {fileID: 658242431422763712}
-  m_RendererFeatureMap: 116e3864ba76c6ff691b3164b9189c17943216de92edcbcac0120bfd008c2209
+  - {fileID: 6491386206292418807}
+  m_RendererFeatureMap: 116e3864ba76c6ff691b3164b9189c17943216de92edcbcac0120bfd008c2209f720ee9d5c09165a
   m_UseNativeRenderPass: 0
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
@@ -119,3 +120,25 @@ MonoBehaviour:
     BlurQuality: 0
     Falloff: 100
     SampleCount: -1
+--- !u!114 &6491386206292418807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb4067eb14005684ea56a60547978721, type: 3}
+  m_Name: BetterFog
+  m_EditorClassIdentifier: Assembly-CSharp::INab.BetterFog.URP.BetterFog
+  m_Active: 1
+  m_Settings:
+    Event: 550
+    _UseCustomDepthTexture: 0
+    _UseFogOffsetTexture: 0
+    _DisableSceneView: 0
+  m_FogFactorShader: {fileID: 0}
+  m_FogBlendShader: {fileID: 0}
+  m_SMSSShader: {fileID: 0}
+  m_CustomDepthPassShader: {fileID: 0}
