@@ -38,6 +38,16 @@ public class MainMenuManager : MonoBehaviour
         LoadingManager.Instance.LoadScene(NewGameScene);
     }
 
+    public void NewGameDesiredScene(string DesejoScene)
+    {
+        if (NewGameDeleteSaves)
+        {
+            SaveSystem.DeleteSave();
+        }
+
+        LoadingManager.Instance.LoadScene(DesejoScene);
+    }
+
     public void CompletionistScene()
     {
         LoadingManager.Instance.LoadScene("Tester");

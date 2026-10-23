@@ -9,6 +9,7 @@ public class StreetAd : MonoBehaviour
 
     [Header("Conteúdo do Anúncio")]
     public Sprite AdImage;
+    [TextArea(5, 5)]
     public string AdText;
     public float AdID;
 

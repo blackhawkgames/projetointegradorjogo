@@ -6,7 +6,7 @@ public class RadioController : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip musicaRadio;
 
-    private bool tocando = false;
+    public bool tocando = false;
 
     private void Start()
     {
