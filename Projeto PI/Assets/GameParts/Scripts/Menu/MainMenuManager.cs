@@ -19,12 +19,12 @@ public class MainMenuManager : MonoBehaviour
 
     public void ContinueGame()
     {
-        SaveData data = SaveSystem.LoadGame();
+        SaveData data = SaveSystem.LoadGame(GameManager.Instance);
 
         if (data != null)
         {
             GameManager.Instance.ApplySaveData(data);
-            LoadingManager.Instance.LoadScene(NewGameScene);
+            LoadingManager.Instance.LoadScene(GameManager.Instance.sceneIndex);
         }
     }
 

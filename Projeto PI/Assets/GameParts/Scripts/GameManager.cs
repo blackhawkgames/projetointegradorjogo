@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public float risco = 0f;
     public float exposicao = 0f;
     public bool CompletouJogo = false;
+    public string sceneIndex;
 
     [Header("Configurações do Jogo")]
     public int qualidadeGrafica = 2;
@@ -29,6 +30,7 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
 
             HasSave = SaveSystem.SaveExists();
+            SaveSystem.LoadGame(this);
         }
         else
         {

@@ -103,6 +103,7 @@ public class FakeDownloadButton : MonoBehaviour
         {
             if (textoEducativo != null) textoEducativo.text = mensagemEducativa;
             painelEducativo.SetActive(true);
+            bm.objectiveCount = bm.necessaryCount;
             bm.onComplete?.Invoke();
         }
     }

@@ -14,7 +14,7 @@ public class C2ObjectivesSync : MonoBehaviour
 
     private void VerifyCount()
     {
-        if(adsCount > 2 && !HalfDone)
+        if(adsCount > 4 && !HalfDone)
         {
             CompleteHalfEvent?.Invoke();
             HalfDone = true;

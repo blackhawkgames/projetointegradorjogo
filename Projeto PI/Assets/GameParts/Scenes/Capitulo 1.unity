@@ -6398,6 +6398,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1600453387746120717, guid: a6bc73ad7a25c074fbe8ac7ac4634d14,
+        type: 3}
+      propertyPath: chapterSceneName
+      value: Capitulo 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1985915710843355103, guid: a6bc73ad7a25c074fbe8ac7ac4634d14,
         type: 3}
       propertyPath: canLook
@@ -6432,6 +6437,46 @@ PrefabInstance:
         type: 3}
       propertyPath: bobFrequency
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2314606002710150344, guid: a6bc73ad7a25c074fbe8ac7ac4634d14,
+        type: 3}
+      propertyPath: necessaryCount
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2314606002710150344, guid: a6bc73ad7a25c074fbe8ac7ac4634d14,
+        type: 3}
+      propertyPath: onComplete.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2314606002710150344, guid: a6bc73ad7a25c074fbe8ac7ac4634d14,
+        type: 3}
+      propertyPath: onComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2314606002710150344, guid: a6bc73ad7a25c074fbe8ac7ac4634d14,
+        type: 3}
+      propertyPath: onComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1499289301}
+    - target: {fileID: 2314606002710150344, guid: a6bc73ad7a25c074fbe8ac7ac4634d14,
+        type: 3}
+      propertyPath: onComplete.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2314606002710150344, guid: a6bc73ad7a25c074fbe8ac7ac4634d14,
+        type: 3}
+      propertyPath: onComplete.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CompleteWeb
+      objectReference: {fileID: 0}
+    - target: {fileID: 2314606002710150344, guid: a6bc73ad7a25c074fbe8ac7ac4634d14,
+        type: 3}
+      propertyPath: onComplete.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Chapter1OBJECTIVES, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2314606002710150344, guid: a6bc73ad7a25c074fbe8ac7ac4634d14,
+        type: 3}
+      propertyPath: onComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2362007472078891189, guid: a6bc73ad7a25c074fbe8ac7ac4634d14,
         type: 3}
@@ -26705,7 +26750,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: MainMenu
+          m_StringArgument: Capitulo 2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1845453061

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6173350821c514d4b90c0b2d3c807680, type: 3}
+  m_Name: Choice 4
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueChoiceData
+  situationText: 
+  choices:
+  - choiceText: "Tempos dif\xEDceis meu amigo..."
+    riscoPorConsequencia: 0
+    exposicaoPorConsequencia: 0
+    mensagemEducativa: Fica frio que logo passa...
+    hasEvent: 1
+    eventId: escolha1
+    nextDialogueNode: {fileID: 11400000, guid: b0eef26feccf22c4faf03b8eea086a5d, type: 2}
+  - choiceText: "N\xE3o enche o saco!"
+    riscoPorConsequencia: 0
+    exposicaoPorConsequencia: 0
+    mensagemEducativa: Pra que isso?
+    hasEvent: 1
+    eventId: escolha4
+    nextDialogueNode: {fileID: 0}
+  - choiceText: ...
+    riscoPorConsequencia: 0
+    exposicaoPorConsequencia: 0
+    mensagemEducativa: "N\xE3o seja ignorante!"
+    hasEvent: 1
+    eventId: escolha2
+    nextDialogueNode: {fileID: 0}

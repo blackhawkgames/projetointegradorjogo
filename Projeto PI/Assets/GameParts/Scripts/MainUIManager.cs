@@ -10,6 +10,7 @@ public class MainUIManager : MonoBehaviour
 {
     [Header("Referências Base")]
     public string ChapterName;
+    public string chapterSceneName;
     public GameTools gameTools;
     public float fadeDuration = 0.3f;
     public CanvasGroup BackgroundCanvas;
@@ -60,6 +61,7 @@ public class MainUIManager : MonoBehaviour
     private void Start()
     {
         FadeOut(BackgroundCanvas);
+        GameManager.Instance.sceneIndex = chapterSceneName;
     }
 
     void OpenInventory()

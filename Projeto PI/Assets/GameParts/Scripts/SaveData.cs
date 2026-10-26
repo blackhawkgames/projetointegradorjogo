@@ -11,4 +11,5 @@ public class SaveData
     public int qualidadeGrafica;
     public float volumeMaster;
     public float sensibilidadeMouse;
+    public string chapterSceneIndex;
 }

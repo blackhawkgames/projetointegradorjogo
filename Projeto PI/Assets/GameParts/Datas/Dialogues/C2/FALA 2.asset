@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FALA 2
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   dialogueType: 1
-  voiceClip: {fileID: 8300000, guid: fe8500ff64cbd86418b8e033806ab633, type: 3}
+  voiceClip: {fileID: 0}
   audioMode: 0
   singleLine:
     text: 

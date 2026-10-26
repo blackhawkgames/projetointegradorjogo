@@ -22,6 +22,7 @@ public class StreetAd : MonoBehaviour
     [Header("Interações")]
     public UnityEvent WinConsequences;
     public UnityEvent Consequences;
+    public UnityEvent VisualConsequence;
 
     private bool HasInteracted;
 
@@ -46,19 +47,29 @@ public class StreetAd : MonoBehaviour
 
     public void ConsequenciaConcluida()
     {
-        if (IsOnlyVisual) return;
-
         HasInteracted = true;
         CanPlayerInteract = false;
+        
+        if (IsOnlyVisual)
+        {
+            VisualConsequence?.Invoke();
+            return;
+        }
+
         Consequences?.Invoke();
     }
 
     public void ConsequenciaIgnorada()
     {
-        if (IsOnlyVisual) return;
-
         HasInteracted = true;
         CanPlayerInteract = false;
+
+        if (IsOnlyVisual)
+        {
+            VisualConsequence?.Invoke();
+            return;
+        }
+
         WinConsequences?.Invoke();
     }
 }
